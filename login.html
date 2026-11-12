@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chuzapop - Entrar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+  <div class="app">
+    <form id="form" class="card login-box">
+      <img src="moneda.png" alt="Chuzapop" class="logo login-logo">
+      <h1 class="login-title">Chuzapop</h1>
+      <h3 id="title">Entrar</h3>
+      <p id="feedback" class="feedback hidden"></p>
+
+      <label>Apodo</label>
+      <input id="nick" type="text" autocomplete="username" placeholder="ej: pepe_23">
+
+      <label>Clave</label>
+      <input id="pass" type="password" autocomplete="current-password" placeholder="mínimo 6 caracteres">
+
+      <div class="row">
+        <!-- Agregamos la clase 'primary' para que se pinte con el degradado correcto -->
+        <button type="submit" class="primary" id="submitBtn">Entrar</button>
+      </div>
+      <button type="button" id="toggle" class="link">¿No tenés cuenta? Registrate</button>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="login.js"></script>
+</body>
+</html>
