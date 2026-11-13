@@ -322,3 +322,15 @@ input { width: 100%; padding: 12px; border-radius: 12px; border: 1px solid var(-
 .login-box .row button {
   width: 100%;
 }
+/* --- CORRECCIÓN PARA EL AVATAR POR DEFECTO EN EL CHAT --- */
+.user-avatar-small,
+.selected-dest-info img {
+  width: 40px !important;
+  height: 40px !important;
+  min-width: 40px !important;
+  min-height: 40px !important;
+  max-width: 40px !important;
+  max-height: 40px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+}
